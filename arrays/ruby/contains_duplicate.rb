@@ -1,7 +1,11 @@
 def contains_duplicate(nums)
-    if nums.uniq.size == nums.size
-        false
-    else
-        true
-    end
+#     91%
+    nums.uniq != nums
+#     87%
+#     hash = {}
+#     nums.each do |x|
+#         return true if hash[x] == x
+#         hash[x] = x;
+#     end
+#     false
 end
