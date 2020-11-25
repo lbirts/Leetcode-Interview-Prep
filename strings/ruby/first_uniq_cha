@@ -1,0 +1,11 @@
+def first_uniq_char(s)
+    return -1 if s == ""
+    array = s.split("")
+    tally = array.tally
+    char = tally.find { |key, value| value == 1}
+    if char
+        return array.index(char[0])
+    else
+        return -1
+    end 
+end
