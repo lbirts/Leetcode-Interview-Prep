@@ -6,12 +6,10 @@ def longest_common_prefix(strs)
     
     (0..length).each do |index|
         char = strs[0][index]
-        if !strs.all? { |string| string[index] == char }
-            break
-        else
+        if strs.all? { |string| string[index] == char }
             common+=char
+        else
+            return common
         end
     end
-    
-    return common
 end
