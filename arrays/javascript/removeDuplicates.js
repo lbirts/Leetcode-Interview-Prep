@@ -8,6 +8,8 @@ var removeDuplicates = function(nums) {
      }
    }
     
+    
+    
     // let i=0;
     // while(i<nums.length-1){
     //     let j=i+1;
